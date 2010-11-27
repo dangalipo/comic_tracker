@@ -1,0 +1,5 @@
+%h2= "Name #{@series.name}"
+%h3= "Finished: #{@series.finished.to_s}"
+%h3= "One shot: #{@series.one_shot.to_s}"
+
+= link_to 'View all series', series_index_path

@@ -1,0 +1,10 @@
+%title Series
+
+= link_to 'Add new series', new_series_path
+%table
+  %th Name
+  %th Finished
+  %th One Shot
+  %th Actions
+  
+  = render :partial => 'series', :collection => @series

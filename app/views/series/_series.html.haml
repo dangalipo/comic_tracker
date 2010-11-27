@@ -1,0 +1,7 @@
+%tr
+  %td= link_to series.name, series_path(series.id)
+  %td= series.finished.to_s
+  %td= series.one_shot.to_s
+  %td
+    = link_to 'Edit', edit_series_path(series.id)
+    = link_to 'Delete',  series_path(series.id), :method => :delete, :confirm => 'are you sure?'
