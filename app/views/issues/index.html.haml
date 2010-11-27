@@ -1,0 +1,9 @@
+%title Issues
+
+= link_to 'Add new Issue', new_issue_path
+%table
+  %th Issues No.
+  %th Release Date
+  %th Actions
+  
+  = render :partial => 'issue', :collection => @issues

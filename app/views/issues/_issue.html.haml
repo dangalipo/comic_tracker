@@ -1,0 +1,6 @@
+%tr
+  %td= link_to issue.issue_number.to_s, issue_path(issue.id)
+  %td= issue.release_date
+  %td
+    = link_to 'Edit', edit_issue_path(issue.id)
+    = link_to 'Delete',  issue_path(issue.id), :method => :delete, :confirm => 'are you sure?'
