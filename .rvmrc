@@ -1,1 +1,7 @@
-rvm use ruby-1.8.7-p302@comic_tracker --create
+
+if [[ -s "/Users/dan/.rvm/environments/ruby-1.8.7-p302@comic_tracker" ]] ; then
+  . "/Users/dan/.rvm/environments/ruby-1.8.7-p302@comic_tracker"
+else
+  rvm use ruby-1.8.7-p302@comic_tracker --create
+fi
+
