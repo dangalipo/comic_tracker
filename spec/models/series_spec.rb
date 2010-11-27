@@ -20,6 +20,13 @@ describe Series do
       @series.finished.class.should == FalseClass
     end
     
+    it 'should support many issues' do
+      @issue_a = Issue.make
+      @issue_b = Issue.new
+      @series.issues << @issue_a
+      @series.issues << @issue_b
+    end
+    
   end
   
 end
